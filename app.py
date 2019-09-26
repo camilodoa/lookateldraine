@@ -27,6 +27,6 @@ print("said hello")
 
 for card in response['data']:
     client.messages.create(to=you, from_=me, media_url=[card['image_uris']['normal']])
-    print("sent the card {0} to david at {0}".format(card['name'], datetime.now().time()))
+    print("sent the card {0} to david at {1}".format(card['name'], datetime.now().time()))
     # Wait for an hour
     time.sleep(3600)
